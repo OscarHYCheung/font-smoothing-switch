@@ -7,12 +7,15 @@
     "16": "fonts16.png",
     "128": "fonts128.png"
   },
-  "content_scripts": [
-    {
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [{
       "matches": ["http://*/*", "https://*/*"],
-      "css": ["css/main.css"],
-      "js": ["js/main.js"]
-    }
-  ],
+      "css": ["css/main.css"]
+  }],
+  "background": {
+    "scripts": ["js/main.js"]
+  },
   "permissions": ["tabs", "http://*/*", "https://*/*"]
 }
