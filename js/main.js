@@ -11,3 +11,6 @@ chrome.browserAction.onClicked.addListener(function browserActionOnClickHandler(
     isTurnedOn = !isTurnedOn;
     injectClass();
 });
+
+chrome.tabs.onUpdated.addListener(injectClass);
+chrome.tabs.onActivated.addListener(injectClass);
