@@ -1,5 +1,9 @@
 var isTurnedOn = false;
 var injectClass = function() {
+    if (!chrome || !chrome.tabs || !chrome.tabs.executeScript) {
+        return;
+    }
+
     var codeToBeInjected = isTurnedOn ? 'document.body.classList.add("chrome-webkit-font-smoothing-switch")' :
             'document.body.classList.remove("chrome-webkit-font-smoothing-switch")';
     chrome.tabs.executeScript({
