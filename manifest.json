@@ -1,7 +1,7 @@
 {
   "name": "Font Smoothing Switch",
-  "version": "0.0.2",
-  "manifest_version": 3,
+  "version": "0.0.3",
+  "manifest_version": 4,
   "description": "Turn on font smoothing by one click",
   "icons": {
     "16": "icon16.png",
