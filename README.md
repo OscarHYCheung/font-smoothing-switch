@@ -8,6 +8,6 @@ Since the extension is not packed and published through Chrome Web Store, Develo
 
 ### Todo
 - [x] Add button for switch on and off font smothing feature
-- [ ] Design icons
+- [x] Design icons
 - [ ] Change icon according to on/off
 - [ ] Save on/off state of tabs individually
